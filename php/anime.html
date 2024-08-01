@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link fonts -->
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/header_footer.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/media.css">
+
+    <!-- slick -->
+    
+
+    <title><?php if(isset($pageTitle)){echo $pageTitle;}?></title> 
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="container_header">
+                
+            <div class="header_logo">
+            <img src="../../img/header/logo.svg" alt="logo" class="header_logo">
+            </div>
+
+            <nav class="header_nav" id="myheader_nav">
+            <ul class="header_list">
+                <li class="header_list_li"><a href="../index.html">главная</a></li>
+                <li class="header_list_li"><a href="../php/anime.html">аниме</a></li>
+                <li class="header_list_li"><a href="../php/anime_review.html">оставить рецензию</a></li>
+                <li class="header_list_li"><a href="#">видео</a></li>
+                
+                <a href="#" id="menu" class="icon-burger">&#9776;</a>
+                <p class="text_auth_exit text_auth_exit_burger"><a href="../php/register.html">authorization</a></p>
+            </ul>
+            </nav>
+
+            <a href=""><div class="auth_exit">
+            <img src="../../img/header/logo_door.svg" alt="logo_door">
+
+            <p class="text_auth_exit"><a href="../php/register.html">authorization</a></p>
+            </div></a>
+        
+            </div>
+        </div>
+    </header>
+
+</html>
+
+<!-- Этот блок должен меняться -->
+<main class="main">
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome_text">
+            <h2 class="welcome_subtitle">welcome to anime</h2>
+            <h1 class="welcome_title">anime site</h1>
+            </div>
+
+            <!-- - цитата - -->
+            <div class="text_quote">
+            <p>だってばよ</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- СЕКЦИЯ ПОИСКА -->
+<section class="line_sorting-search">
+<div class="line_anime_width-max"></div>
+    <div class="container">
+    <div class="text_sorting_search">
+    <div class="subtitle_sorting-over">
+        <h3 class="text_subtitle_sorting-over-h3">
+        Сортировать по:
+        </h3>
+    </div>
+
+    <!-- Дроп. кнопка -->
+    <div class="dropdown_sorting-over">
+        <div class="dropbtn_sorting-over_text_logo">
+            <button class="dropbtn_sorting-over">Еще 
+            <i class="fa fa-caret-down-sorting-over"></i>
+            <img src="../img/anime/dropdown.svg" alt="dropdown" class="sorting-over_img">
+            </button>
+        </div>
+        <div class="dropdown-content-sorting-over">
+        <a href="#">Топ лучшее</a>
+        <a href="#">Топ худшее</a>
+        </div>
+    </div>
+
+    <!-- Поле поиска -->
+    <div class="search_sorting-over">
+    <form class="search_sorting-over-form">
+        <input class="search_sorting-over-input" type="text" placeholder="Искать аниме">
+        <button class="search_sorting-over-button" type="submit">
+            <a href=""><img src="../img/anime/Search.svg" alt="anime-Search"></a>
+        </button>
+    </form>
+    </div>
+</div>
+</div>
+<div class="line_anime_width-max"></div>
+</section>
+
+<!-- СЕКЦИЯ КАРТОЧЕК -->
+<section class="section_cards_anime-over">
+    <div class="container">
+    <div class="card-anime-display_flex">
+        <!-- Сама карточка card_anime-over -->
+        <a href="#"><div class="card_anime-over">
+            <!-- Полоса рейтинга -->
+            <div class="card_anime_rating-over">
+                <div class="card_anime_rating">
+                    <!-- Сюда код полосы -->
+                </div>
+                <div class="card_anime_rating-text">
+                    <!-- Сюда балл рейтинга -->
+                    <p>8.1</p>
+                </div>
+            </div>
+            <!-- название,жанр и звездочный рейтинг -->
+             <div class="anime_name_genre_rating2-over">
+                <!-- название и жанр -->
+                 <div class="anime_name_genre-over">
+                    <h2 class="anime_rating2_genre_h3">
+                        <!-- Название аниме -->
+                        Иная
+                    </h2>
+                    <p class="anime_rating2_genre_p">
+                        <!-- Жанр аниме -->
+                        хоррор
+                    </p>
+                 </div>
+                 <!-- звездочный рейтинг -->
+                  <div class="card_anime_rating2_text-over">
+                    <div class="card_anime_rating2">
+                        <!-- Сюда код полосы -->
+                        <img src="../img/anime/Star.svg" alt="Star">
+                    </div>
+                    <div class="card_anime_rating2-text">
+                        <!-- Сюда балл рейтинга -->
+                        <p>8.1</p>
+                    </div>
+                </div>
+             </div>
+        </div></a>
+        <!-- конец карточки -->
+        <a href="#"><div class="card_anime-over">
+            <!-- Полоса рейтинга -->
+            <div class="card_anime_rating-over">
+                <div class="card_anime_rating">
+                    <!-- Сюда код полосы -->
+                </div>
+                <div class="card_anime_rating-text">
+                    <!-- Сюда балл рейтинга -->
+                    <p>8.1</p>
+                </div>
+            </div>
+            <!-- название,жанр и звездочный рейтинг -->
+             <div class="anime_name_genre_rating2-over">
+                <!-- название и жанр -->
+                 <div class="anime_name_genre-over">
+                    <h2 class="anime_rating2_genre_h3">
+                        <!-- Название аниме -->
+                        Иная
+                    </h2>
+                    <p class="anime_rating2_genre_p">
+                        <!-- Жанр аниме -->
+                        хоррор
+                    </p>
+                 </div>
+                 <!-- звездочный рейтинг -->
+                  <div class="card_anime_rating2_text-over">
+                    <div class="card_anime_rating2">
+                        <!-- Сюда код полосы -->
+                        <img src="../img/anime/Star.svg" alt="Star">
+                    </div>
+                    <div class="card_anime_rating2-text">
+                        <!-- Сюда балл рейтинга -->
+                        <p>8.1</p>
+                    </div>
+                </div>
+             </div>
+        </div></a>
+        <a href="#"><div class="card_anime-over">
+            <!-- Полоса рейтинга -->
+            <div class="card_anime_rating-over">
+                <div class="card_anime_rating">
+                    <!-- Сюда код полосы -->
+                </div>
+                <div class="card_anime_rating-text">
+                    <!-- Сюда балл рейтинга -->
+                    <p>8.1</p>
+                </div>
+            </div>
+            <!-- название,жанр и звездочный рейтинг -->
+             <div class="anime_name_genre_rating2-over">
+                <!-- название и жанр -->
+                 <div class="anime_name_genre-over">
+                    <h2 class="anime_rating2_genre_h3">
+                        <!-- Название аниме -->
+                        Иная
+                    </h2>
+                    <p class="anime_rating2_genre_p">
+                        <!-- Жанр аниме -->
+                        хоррор
+                    </p>
+                 </div>
+                 <!-- звездочный рейтинг -->
+                  <div class="card_anime_rating2_text-over">
+                    <div class="card_anime_rating2">
+                        <!-- Сюда код полосы -->
+                        <img src="../img/anime/Star.svg" alt="Star">
+                    </div>
+                    <div class="card_anime_rating2-text">
+                        <!-- Сюда балл рейтинга -->
+                        <p>8.1</p>
+                    </div>
+                </div>
+             </div>
+        </div></a>
+        </div>
+    </div>
+</section>
+
+<!-- ПАГИНАЦИЯ -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="title_footer">
+            <h2 class="footer_title_h2">
+            контактная информация
+            </h2>
+            <div class="footer_icons_over">
+                <div class="logo_over mail_over">
+                    <a href="">
+                    <div class="logo_logo_footer">
+                        <img src="../img/footer/logo_mail.svg" alt="">
+                    </div>
+                    <p class="text_logo">
+                    *********************<br>@mail.com
+                    </p>
+                    </a>
+                </div>
+                <div class="logo_over vk_over">
+                    <a href="">
+                    <div class="logo_logo_footer">
+                        <img src="../img/footer/logo_vk.svg" alt="">
+                    </div>
+                    <p class="text_logo">
+                    http://vk.com/<br>****************
+                    </p>
+                    </a>
+                </div>
+                <div class="logo_over tg_over">
+                    <a href="">
+                    <div class="logo_logo_footer">
+                        <img src="../img/footer/logo_tg.svg" alt="">
+                    </div>
+                    <p class="text_logo">
+                    https://<br>web.telegram.org/a/<br>*******
+                    </p>
+                    </a>
+                </div>
+            </div>
+            <div class="line_footer"></div>
+            <div class="welcome_text">
+            <h1 class="welcome_title">anime site</h1>
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- slick -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="../../js/slick.min.js"></script>
+<script src="../../js/script.js"></script>
+<script src="../../js/slider_2.js"></script>
+
+</body>
+
+<!-- script -->
+<script src="../../js/home.js"></script>
