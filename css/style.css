@@ -1,0 +1,773 @@
+/*  */
+:root {
+  --title_font: Anime_ace;
+  --title_size: 2.25rem;
+  --title_letter-spacing: 0.1rem;
+  --title_text-transform: uppercase;
+  --title_weight: 600;
+  --title_mb: 50px;
+  --title_mt: 100px;
+  /* card */
+  --card-font_family: Roboto;
+  --card-font_size: 1rem;
+  --card-font_weight: 500;
+  --card-letter_spacing: 0.1rem;
+}
+
+.title {
+  text-align: center;
+  letter-spacing: var(--title_letter-spacing);
+  text-transform: var(--title_text-transform);
+  font-family: var(--title_font);
+  font-size: var(--title_size);
+  font-weight: var(--title_weight);
+  margin-bottom: var(--title_mb);
+  margin-top: var(--title_mt);
+}
+
+/* CARDS */
+.cards {
+  margin-top: 100px;
+}
+
+.card {
+  background-color: #2f2f2f;
+  justify-content: center;
+  border-radius: 50px;
+  gap: 30px;
+  padding: 42px 36px;
+  align-items: center;
+  display: flex;
+  background-size: cover;
+}
+
+.card_1 {
+  background-image: url("../img/home/cards/card_bg_1.png");
+}
+
+.card_2 {
+  background-image: url("../img/home/cards/card_bg_2.png");
+}
+
+.card_3 {
+  background-image: url("../img/home/cards/card_bg_3.png");
+}
+
+.card_4 {
+  background-image: url("../img/home/cards/card_bg_4.png");
+}
+
+.card_text {
+  max-width: 796px;
+}
+
+.card_text_title {
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.card_text_p {
+  padding-top: 25px;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.card + .card {
+  margin-top: 50px;
+}
+
+/* VIDEO */
+.sakuga_video {
+  text-align: center;
+  justify-content: center;
+}
+
+.sakuga_video_iframe {
+  width: 100%;
+  height: 750px;
+  border-radius: 50px;
+}
+
+/* РЕЦЕНЗИИ */
+
+/* РЕЙТИНГ */
+.accordion {
+  background-color: #2f2f2f;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  /*  */
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.active,
+.accordion:hover {
+  background-color: #1c1c1c;
+}
+
+/* скрыто по умолчанию. */
+.panel {
+  padding: 0 18px;
+  background-color: #1c1e1c;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.section_cards_accordion-panel-over {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.accordion:after {
+  content: "\02795"; /* Символ Юникода для знака «плюс» (+) */
+  font-size: 13px;
+  color: #2f2f2f;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Символ Юникода для знака «минус» (-) */
+}
+
+/*  */
+.title_rating_over {
+  justify-content: center;
+  text-align: center;
+}
+
+/* Слайды */
+.reviews {
+  text-align: center;
+}
+
+/* СЛАЙДЕР */
+/* .slick-slider {
+} */
+
+/* ограничив. оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* лента слайдеров */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* слайд */
+/* .slick-slide {
+} */
+/* слайд активный */
+/* .slick-slide.slick-active {
+} */
+/* слайд основной */
+/* .slick-slide.slick-current {
+} */
+/* слайд по центру */
+/* .slick-slide.slick-center {
+} */
+
+/* стрелка */
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -80px 0px 0px 0px;
+  font-size: 0;
+  width: 2%;
+  height: 100%;
+  z-index: 10;
+}
+/* стрел. влево */
+.slick-arrow.slick-prev {
+  left: 0;
+  background: url("../img/slider/slick/slick_left.svg") 0 0 / 100% no-repeat;
+}
+
+/* стрел. вправо */
+.slick-arrow.slick-next {
+  right: 0;
+  background: url("../img/slider/slick/slick_right.svg") 0 0 / 100% no-repeat;
+}
+
+/* точки */
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slick-dots li {
+  margin: 50px 10px;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider_item + .slider_item {
+  padding-left: 20px;
+}
+
+/* СЛАЙДЕР САКУГА */
+.slider_2 {
+  position: relative;
+  padding: 0px 60px;
+}
+
+/* text-cards-slider */
+.card-slider {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 50px;
+}
+
+.title_img-slider img {
+  width: 60px;
+}
+
+.title_subtitle_text_img-slider {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+}
+
+.title_subtitle_text-slider {
+  text-align: left;
+  font-family: Anime_ace;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.title-text_slider {
+  color: #7b4a9d;
+}
+
+.subtitle-text_slider {
+  padding-top: 15px;
+  color: #000000;
+}
+
+.text_review-slider_p {
+  padding-top: 30px;
+  font-family: var(--card-font_family);
+  font-size: var(--card-font_size);
+  font-weight: var(--card-font_weight);
+  letter-spacing: var(--card-letter_spacing);
+  color: #000000;
+  text-align: left;
+}
+
+/* ANIME.php */
+.line_sorting-search {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.line_anime_width-max {
+  width: 100%;
+  border: 1px solid #fff;
+}
+
+.text_sorting_search {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  gap: 30px;
+}
+
+.text_subtitle_sorting-over-h3 {
+  font-family: var(--card-font_family);
+  font-size: var(--card-font_size);
+  font-weight: var(--title_weight);
+  letter-spacing: var(--card-letter_spacing);
+}
+
+/* dropdown */
+.dropdown_sorting-over {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown_sorting-over.dropbtn_sorting-over {
+  font-size: var(--card-font_size);
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: var(--card-font_family);
+  margin: 0;
+}
+
+.dropbtn_sorting-over {
+  background-color: #ffffff;
+  padding: 10px 30px;
+  color: #000000;
+  border-radius: 5%;
+  font-family: var(--card-font_family);
+  font-size: var(--card-font_size);
+  font-weight: var(--title_weight);
+  letter-spacing: var(--card-letter_spacing);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-content-sorting-over {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5%;
+}
+
+.dropdown-content-sorting-over a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content-sorting-over a:hover {
+  background-color: #ddd;
+  border-radius: 5%;
+}
+
+.dropdown_sorting-over:hover .dropdown-content-sorting-over {
+  display: block;
+}
+
+/* ПОЛЕ ПОИСКА */
+
+.search_sorting-over-form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  height: 42px;
+}
+
+.search_sorting-over-input {
+  cursor: pointer;
+  height: 42px;
+  width: 0;
+  padding: 0 42px 0 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: 0.4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding-left: 40px;
+  font-family: var(--card-font_family);
+  font-size: var(--card-font_size);
+  font-weight: var(--title_weight);
+  letter-spacing: var(--card-letter_spacing);
+}
+
+.search_sorting-over-input:focus {
+  width: 300px;
+  z-index: 1;
+  border-bottom: 2px solid #ffffff;
+}
+
+.search_sorting-over-button {
+  border: none;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.search_sorting-over-input::placeholder {
+  font-family: var(--card-font_family);
+  font-size: var(--card-font_size);
+  font-weight: var(--title_weight);
+  letter-spacing: var(--card-letter_spacing);
+  padding-left: 15px;
+}
+
+/* ПОИСК НЕ ДАЛ РЕЗУЛЬТАТОВ */
+.anime_not_found-over {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.text_anime_not_found span {
+  font-family: var(--card-font_family);
+  font-size: 1.3rem;
+  color: #ca89f8;
+}
+
+.text_anime_not_found {
+  font-family: var(--card-font_family);
+  font-size: 1.3rem;
+  font-weight: var(--title_weight);
+  letter-spacing: var(--card-letter_spacing);
+  margin-bottom: 30px;
+}
+
+/* КАРТОЧКИ АНИМЕ */
+.card-anime-display_flex {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 50fr);
+  flex-wrap: wrap;
+}
+
+.card_anime-over {
+  background-color: #2f2f2f;
+  /* background-image: url(""); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+
+  height: auto;
+  padding: 20px 50px;
+}
+
+.card_anime_rating-over {
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* менять рейтинг полоса - width, height, radius оставить такие же*/
+.card_anime_rating {
+  background-color: red;
+  width: 100%;
+  height: 20px;
+  border-radius: 20px;
+}
+
+.card_anime_rating-text {
+  font-family: var(--card-font_family);
+  font-size: 2.25rem;
+  font-weight: var(--title_weight);
+  letter-spacing: var(--card-letter_spacing);
+  color: #fff;
+}
+
+.anime_name_genre_rating2-over {
+  display: flex;
+  align-items: center;
+  padding-top: 275px;
+  justify-content: space-between;
+}
+
+.anime_rating2_genre_h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: var(--card-font_family);
+  font-size: 1.6rem;
+  font-weight: var(--title_weight);
+  letter-spacing: var(--card-letter_spacing);
+}
+
+.anime_rating2_genre_p {
+  color: #fff;
+  padding-top: 5px;
+  text-transform: uppercase;
+  font-family: var(--card-font_family);
+  font-size: var(--card-font_size);
+  font-weight: var(--title_weight);
+  letter-spacing: var(--card-letter_spacing);
+}
+
+.card_anime_rating2_text-over {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card_anime_rating2-text {
+  color: #fff;
+  font-family: var(--card-font_family);
+  font-size: 2.25rem;
+  font-weight: var(--title_weight);
+  letter-spacing: var(--card-letter_spacing);
+}
+
+/* ПАГИНАЦИЯ */
+
+/* РЕЦЕНЗИЯ */
+.review_anime-title {
+  text-align: center;
+  letter-spacing: var(--title_letter-spacing);
+  text-transform: var(--title_text-transform);
+  font-family: var(--title_font);
+  font-size: var(--title_size);
+  font-weight: var(--title_weight);
+  margin-bottom: var(--title_mb);
+  margin-top: var(--title_mt);
+}
+
+.img_review_anime-over-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.img_review_anime-over-text + .img_review_anime-over-text {
+  margin-top: 60px;
+}
+
+.img_name-riview-anime-over {
+  align-items: center;
+}
+
+.img_name-riview-anime-over img {
+  background-color: #1c1c1c;
+  border-radius: 50%;
+}
+
+.name-riview-anime {
+  padding-top: 15px;
+  font-family: var(--card-font_family);
+  font-size: var(--card-font_size);
+  font-weight: var(--title_weight);
+  letter-spacing: var(--card-letter_spacing);
+}
+
+.text_name-riview-anime-over {
+  background-color: #fff;
+  border-radius: 50px 50px 50px 50px;
+  padding: 30px 40px;
+}
+
+.text-riview-anime {
+  color: #000000;
+}
+
+.riview-anime-text-over_class {
+  font-family: var(--card-font_family);
+  font-size: var(--card-font_size);
+  font-weight: var(--card-font_weight);
+  letter-spacing: var(--card-letter_spacing);
+}
+
+.title-riview-anime,
+.rating-riview-anime {
+  font-weight: 800;
+  color: #7b4a9d;
+  font-size: 1.2rem;
+}
+
+.riview-anime-text-over_class + .riview-anime-text-over_class {
+  padding-top: 20px;
+}
+
+/* АНИМЕ ПОДРОБНЕЕ */
+
+/* РЕЙТИНГ АНИМЕ ПОЛОСА */
+.rating_anime-over {
+  /* margin-top: 100px; */
+}
+
+/* РЕЙТИНГ ЗВЕЗДОЧНЫЙ */
+.rating_star_anime-over {
+  /* margin-top: 100px; */
+}
+
+.text_anime_details-over {
+  margin-top: 100px;
+}
+
+.text_anime_details_p {
+  font-family: var(--card-font_family);
+  font-size: var(--card-font_size);
+  font-weight: var(--card-font_weight);
+  letter-spacing: var(--card-letter_spacing);
+}
+
+.text_anime_details_p + .text_anime_details_p {
+  padding-top: 20px;
+}
+
+/* ГАЛЛЕРЕЯ */
+.block_gallery {
+  background-color: rgb(97, 97, 97);
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-radius: 20px;
+  height: 300px;
+
+  transition: transform 0.5s;
+}
+
+.block_gallery:hover {
+  transform: scale(1.2);
+}
+
+.block_gallery_anime-over {
+  display: grid;
+  gap: 20px;
+}
+
+.block_gallery_anime-over + .block_gallery_anime-over {
+  padding-top: 20px;
+}
+
+.block_1_gallery_anime-over {
+  grid-template-columns: 830px 1fr;
+}
+
+.block_2_gallery_anime-over {
+  grid-template-columns: 1fr 830px;
+}
+
+.block_3_gallery_anime-over {
+  grid-template-columns: repeat(3, 50fr);
+}
+
+/* ВЕДУЩИЕ ПЕРСОНАЖИ */
+.leading_characters_anime-over {
+  display: grid;
+  grid-template-columns: repeat(6, 50fr);
+  gap: 25px;
+}
+
+.leading_characters_anime-text-over {
+  text-align: center;
+}
+
+.leading_characters_anime-img {
+  background-color: rgb(97, 97, 97);
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-radius: 50px;
+  height: 200px;
+}
+
+.leading_characters_anime-p {
+  padding-top: 10px;
+  font-family: var(--card-font_family);
+  font-size: var(--card-font_size);
+  font-weight: var(--card-font_weight);
+  letter-spacing: var(--card-letter_spacing);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: #fff;
+}
+
+/* САКУГА ВИДЕО - АНИМЕ ДЕТАЛЬНО */
+.sakuga_video-anime_details iframe {
+  width: 100%;
+  height: 760px;
+  border-radius: 50px;
+}
+
+/* ОСТАВИТЬ РЕЦЕНЗИЮ */
+.text_anime_not_found_review {
+  text-align: center;
+  font-family: var(--card-font_family);
+  font-size: 1.25rem;
+  font-weight: var(--card-font_weight);
+  letter-spacing: var(--card-letter_spacing);
+  padding-top: 50px;
+}
+
+.text_anime_not_found_review span {
+  color: #ca89f8;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.text_anime_not_found_review + .text_anime_not_found_review {
+  padding-top: 20px;
+}
+
+.title + .text_anime_not_found_review {
+  padding-top: 0px;
+}
+
+.logo_over {
+  text-align: center;
+}
+
+.author-review-over {
+  text-align: center;
+}
+
+/* шаблон */
+.section-sample-item {
+  display: flex;
+  align-items: center;
+  margin: 70px 0;
+}
+
+.section-sample-content-left,
+.section-sample-content-right {
+  flex: 1;
+  padding: 0 80px;
+}
+
+.section-sample-circle {
+  width: 122px;
+  height: 122px;
+  background-color: #ca89f8;
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.25rem;
+  font-family: var(--title_font);
+  font-weight: 700;
+  margin: 0 20px;
+}
+
+.section-sample-content-left h2 {
+  margin: 0;
+  text-align: right;
+  letter-spacing: var(--title_letter-spacing);
+  text-transform: var(--title_text-transform);
+  font-family: var(--title_font);
+  font-size: 1.25rem;
+  font-weight: var(--title_weight);
+}
+
+.section-sample-content-right p {
+  margin: 0;
+  font-family: var(--card-font_family);
+  font-size: var(--card-font_size);
+  font-weight: var(--card-font_weight);
+  letter-spacing: var(--card-letter_spacing);
+}

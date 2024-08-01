@@ -1,0 +1,247 @@
+/* HOME */
+@media screen and (max-width: 1050px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .slick-arrow {
+    display: none;
+    position: none;
+    margin: 0px 0px 0px 0px;
+    font-size: 0;
+    width: 0%;
+    height: 0%;
+    z-index: 0;
+  }
+  .slider_2 {
+    position: relative;
+    padding: 0px 0px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .welcome_subtitle {
+    font-size: 1.5rem;
+  }
+  .title_img-slider img {
+    display: none;
+  }
+  .title_subtitle_text_img-slider {
+    gap: 0px;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .welcome_title {
+    font-size: 2.5rem;
+  }
+  .subtitle_filling_form a {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  /* AUTH-REG */
+  .data_text_input {
+    font-size: 1rem;
+  }
+
+  .subtitle_filling_form a {
+    font-size: 1.2rem;
+  }
+
+  .welcome_title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .filling_form {
+    padding: 70px 40px;
+  }
+  .data_text_input {
+    width: 100%;
+  }
+  .btn_send_filling_form {
+    padding: 20px 0;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .subtitle_filling_form a {
+    font-size: 1rem;
+  }
+  .welcome_title {
+    font-size: 1.4rem;
+  }
+  .btn_send_filling_form {
+    padding: 20px 0;
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+/* ANIME.PHP */
+@media screen and (max-width: 1040px) {
+  .text_sorting_search {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search_sorting-over {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 560px) {
+  .search_sorting-over-input:focus {
+    width: 225px;
+  }
+  .search_sorting-over-form {
+    width: 225px;
+  }
+  .search_sorting-over-input::placeholder {
+    padding-left: 5px;
+  }
+}
+
+/* АНИМЕ НЕ НАЙДЕНО */
+@media screen and (max-width: 420px) {
+  .text_anime_not_found {
+    font-size: 1rem;
+    font-family: Roboto;
+  }
+  .text_anime_not_found span {
+    font-size: 1rem;
+  }
+}
+
+/* КАРТОЧКИ АНИМЕ */
+@media screen and (max-width: 1620px) {
+  .anime_rating2_genre_h3 {
+    font-size: 1.2rem;
+  }
+
+  .anime_rating2_genre_p {
+    font-size: 1rem;
+  }
+
+  .card_anime_rating2-text,
+  .card_anime_rating-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .card-anime-display_flex {
+    grid-template-columns: repeat(1, 100fr);
+  }
+}
+
+/* РЕЦЕНЗИЯ */
+@media screen and (max-width: 860px) {
+  .img_review_anime-over-text {
+    flex-direction: column;
+    align-items: center;
+  }
+  .title-riview-anime {
+    font-size: 1rem;
+  }
+  .rating-riview-anime {
+    font-size: 1rem;
+  }
+  .img_review_anime-over-text {
+    gap: 20px;
+  }
+}
+
+/* АНИМЕ ПОДРОБНЕЙ */
+@media screen and (max-width: 1200px) {
+  .block_1_gallery_anime-over,
+  .block_2_gallery_anime-over {
+    grid-template-columns: repeat(2, 50fr);
+  }
+  .leading_characters_anime-over {
+    grid-template-columns: repeat(5, 50fr);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .leading_characters_anime-over {
+    grid-template-columns: repeat(4, 50fr);
+  }
+  .title_gallery_anime_details,
+  .title_text_reviews,
+  .leading_characters_anime-h2,
+  .sakuga_video_anime_details_h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .leading_characters_anime-over {
+    grid-template-columns: repeat(3, 50fr);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .block_1_gallery_anime-over,
+  .block_2_gallery_anime-over,
+  .block_3_gallery_anime-over {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .leading_characters_anime-over {
+    grid-template-columns: repeat(2, 50fr);
+  }
+  .text_anime_details_p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .leading_characters_anime-over {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* ОСТАВИТЬ РЕЦЕНЗИЮ */
+@media screen and (max-width: 1446px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1045px) {
+  .section-sample-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-sample-content-left,
+  .section-sample-content-right {
+    padding: 10px 20px;
+  }
+
+  .section-sample-circle {
+    width: 60px;
+    height: 60px;
+    margin: 10px 0;
+    font-size: 1.3rem;
+  }
+
+  .section-sample-content-left h2 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .section-sample-content-right p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
