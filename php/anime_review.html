@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link fonts -->
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- link -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/header_footer.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/media.css">
+
+    <!-- slick -->
+    
+
+    <title><?php if(isset($pageTitle)){echo $pageTitle;}?></title> 
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="container_header">
+                
+            <div class="header_logo">
+            <img src="../../img/header/logo.svg" alt="logo" class="header_logo">
+            </div>
+
+            <nav class="header_nav" id="myheader_nav">
+            <ul class="header_list">
+                <li class="header_list_li"><a href="../index.html">главная</a></li>
+                <li class="header_list_li"><a href="../php/anime.html">аниме</a></li>
+                <li class="header_list_li"><a href="../php/anime_review.html">оставить рецензию</a></li>
+                <li class="header_list_li"><a href="#">видео</a></li>
+                
+                <a href="#" id="menu" class="icon-burger">&#9776;</a>
+                <p class="text_auth_exit text_auth_exit_burger"><a href="../php/register.html">authorization</a></p>
+            </ul>
+            </nav>
+
+            <a href=""><div class="auth_exit">
+            <img src="../../img/header/logo_door.svg" alt="logo_door">
+
+            <p class="text_auth_exit"><a href="../php/register.php">authorization</a></p>
+            </div></a>
+        
+            </div>
+        </div>
+    </header>
+
+</html>
+
+<!-- Этот блок должен меняться -->
+<main class="main">
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome_text">
+            <h2 class="welcome_subtitle">welcome to anime</h2>
+            <h1 class="welcome_title">anime site</h1>
+            </div>
+
+            <!-- - цитата - -->
+            <div class="text_quote">
+            <p>だってばよ</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<section class="anime_not_found-over">
+    <div class="container">
+        <h2 class="title">Оставить рецензию</h2>
+        <img src="../img/review/girl1.png" alt="anime_girl">
+        <p class="text_anime_not_found_review">
+        Напиши нам на <a href="#"><span>ПОЧТУ</span></a>, <a href="#"><span>ВК</span></a> или в <a href="#"><span>TELEGRAM</span></a> <br> и мы обязательно добавим твое любимое аниме !
+        </p>
+    </div>
+</section>
+
+<section class="contacts-over">
+    <div class="container">
+    <h2 class="title">контактная информация</h2>
+    <div class="footer_icons_over">
+                <div class="logo_over mail_over">
+                    <a href="">
+                    <div class="logo_logo_footer">
+                        <img src="../img/footer/logo_mail.svg" alt="">
+                    </div>
+                    <p class="text_logo">
+                    *********************<br>@mail.com
+                    </p>
+                    </a>
+                </div>
+                <div class="logo_over vk_over">
+                    <a href="">
+                    <div class="logo_logo_footer">
+                        <img src="../img/footer/logo_vk.svg" alt="">
+                    </div>
+                    <p class="text_logo">
+                    http://vk.com/<br>****************
+                    </p>
+                    </a>
+                </div>
+                <div class="logo_over tg_over">
+                    <a href="">
+                    <div class="logo_logo_footer">
+                        <img src="../img/footer/logo_tg.svg" alt="">
+                    </div>
+                    <p class="text_logo">
+                    https://<br>web.telegram.org/a/<br>*******
+                    </p>
+                    </a>
+                </div>
+            </div>
+    </div>
+</section>
+
+<section class="author-review-over">
+    <div class="container">
+    <h2 class="title">для авторов рецензий</h2>
+    <img src="../img/review/girl2.png" alt="anime_girl">
+    <p class="text_anime_not_found_review"><a href="#">
+        <span>Уважаемые авторы рецензий,</span></a>
+        <p class="text_anime_not_found_review">
+        Просим вас писать рецензии, следуя предложенному шаблону, чтобы <br> упростить процесс проверки и публикации на нашем сайте. Использование <br> единого шаблона обеспечивает структурированность и удобочитаемость <br> ваших текстов.
+        </p>
+    </div>
+</section>
+
+<section class="sample-review_anime-over">
+    <div class="container">
+    <h2 class="title">шаблон рецензии</h2>
+    <p class="text_anime_not_found_review">Постарайтесь следовать предложенному шаблону</p>
+
+    <!-- шаблон -->
+     <div class="section-sample-review-steps-over">
+        <!-- 1 -->
+        <div class="section-sample-item">
+            <div class="section-sample-content-left">
+                <h2>ЗАГОЛОВОК</h2>
+            </div>
+            <div class="section-sample-circle">1</div>
+            <div class="section-sample-content-right">
+                <p>Название произведения</p>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="section-sample-item">
+            <div class="section-sample-content-left">
+                <h2>Жанр</h2>
+            </div>
+            <div class="section-sample-circle">2</div>
+            <div class="section-sample-content-right">
+                <p>Тут вы должны написать жанр произведения</p>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="section-sample-item">
+            <div class="section-sample-content-left">
+                <h2>Введение</h2>
+            </div>
+            <div class="section-sample-circle">3</div>
+            <div class="section-sample-content-right">
+                <p>В введении дайте краткое описание произведения и упомяните, почему вы решили его прочитать или рецензировать. Например:
+                "Роман 'Название' автора 'Имя Автора' привлек мое внимание благодаря своему необычному сюжету и положительным отзывам критиков. Этот роман относится к жанру 'Жанр' и был опубликован в 'Год'."</p>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="section-sample-item">
+            <div class="section-sample-content-left">
+                <h2>сюжет произведения</h2>
+            </div>
+            <div class="section-sample-circle">4</div>
+            <div class="section-sample-content-right">
+                <p>Сюжет: Кратко изложите сюжет, избегая спойлеров. Опишите завязку, ключевые события и кульминацию.
+                Персонажи: Рассмотрите главных персонажей, их развитие и взаимодействие между собой. Отметьте, насколько они были проработаны и интересны.</p>
+            </div>
+        </div>
+        <!-- 5 -->
+        <div class="section-sample-item">
+            <div class="section-sample-content-left">
+                <h2>Тема и посыл:</h2>
+            </div>
+            <div class="section-sample-circle">5</div>
+            <div class="section-sample-content-right">
+                <p>Опишите главные темы произведения и его основной посыл. Что хотел донести автор до читателей?
+Стиль и язык: Оцените стиль письма автора, использование языка, метафор и других литературных приемов.
+Анализ</p>
+            </div>
+        </div>
+        <!-- 6 -->
+        <div class="section-sample-item">
+            <div class="section-sample-content-left">
+                <h2>оценка произведения:</h2>
+            </div>
+            <div class="section-sample-circle">6</div>
+            <div class="section-sample-content-right">
+                <p>Положительные стороны:
+Что вам особенно понравилось?
+Какие моменты вас зацепили или оставили сильное впечатление?
+Отрицательные стороны:
+Что, по вашему мнению, можно было бы улучшить?
+Были ли моменты, которые вам не понравились или показались скучными?</p>
+            </div>
+        </div>
+        <!-- 7 -->
+        <div class="section-sample-item">
+            <div class="section-sample-content-left">
+                <h2>Заключение</h2>
+            </div>
+            <div class="section-sample-circle">7</div>
+            <div class="section-sample-content-right">
+                <p>Подведите итоги рецензии. Поделитесь, кому бы вы порекомендовали это произведение и почему. Например:
+                "В целом, роман 'Название' — это захватывающее и глубокое произведение, которое стоит прочитать всем любителям 'Жанр'. Несмотря на некоторые недостатки, книга оставляет сильное впечатление и заставляет задуматься о 'Тема'."</p>
+            </div>
+        </div>
+        <!-- 8 -->
+        <div class="section-sample-item">
+            <div class="section-sample-content-left">
+                <h2>Оценка</h2>
+            </div>
+            <div class="section-sample-circle">8</div>
+            <div class="section-sample-content-right">
+                <p>Напишите оценку от 1 до 10</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="title_footer">
+            <h2 class="footer_title_h2">
+            контактная информация
+            </h2>
+            <div class="footer_icons_over">
+                <div class="logo_over mail_over">
+                    <a href="">
+                    <div class="logo_logo_footer">
+                        <img src="../img/footer/logo_mail.svg" alt="">
+                    </div>
+                    <p class="text_logo">
+                    *********************<br>@mail.com
+                    </p>
+                    </a>
+                </div>
+                <div class="logo_over vk_over">
+                    <a href="">
+                    <div class="logo_logo_footer">
+                        <img src="../img/footer/logo_vk.svg" alt="">
+                    </div>
+                    <p class="text_logo">
+                    http://vk.com/<br>****************
+                    </p>
+                    </a>
+                </div>
+                <div class="logo_over tg_over">
+                    <a href="">
+                    <div class="logo_logo_footer">
+                        <img src="../img/footer/logo_tg.svg" alt="">
+                    </div>
+                    <p class="text_logo">
+                    https://<br>web.telegram.org/a/<br>*******
+                    </p>
+                    </a>
+                </div>
+            </div>
+            <div class="line_footer"></div>
+            <div class="welcome_text">
+            <h1 class="welcome_title">anime site</h1>
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- slick -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="../../js/slick.min.js"></script>
+<script src="../../js/script.js"></script>
+<script src="../../js/slider_2.js"></script>
+
+</body>
+
+<!-- script -->
+<script src="../../js/home.js"></script>
